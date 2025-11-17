@@ -8,7 +8,7 @@ This project is ideal for **college submissions, GitHub portfolios, academic dem
 
 ## ✨ **Key Features**
 
-### 🖼️ **Image Upload System**
+### 🖼️ **Screenshot of Tool**
 
 <img width="1142" height="695" alt="image 2" src="https://github.com/user-attachments/assets/fd3581bc-bc76-4170-929a-27b94cd086da" />
 
@@ -166,11 +166,6 @@ Output file will appear in:
 dist/lost.exe
 ```
 
----
-
-
----
-
 ## ❤️ **Credits**
 
 * Developed by **AashishCyberH4CKS**
@@ -182,3 +177,4 @@ dist/lost.exe
 This project is free for personal, academic, and educational use.
 
 > ⭐ If this project helped you, consider giving it a **star on GitHub**!
+
