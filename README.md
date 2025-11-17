@@ -1,147 +1,184 @@
-📦 PCTE Lost & Found Management System
+# 🚀 **PCTE Lost & Found Management System**
 
-A modern, intelligent, and feature-rich Lost & Found Management System built using Python, Tkinter/ttkbootstrap, SQLite, NLP (NLTK), and Machine Learning (TF‑IDF Similarity).
+A modern, feature-rich, AI-powered **Lost & Found Management System** built using **Python**, **Tkinter/ttkbootstrap**, **SQLite**, **NLTK**, **ML (TF-IDF Similarity)**, and more.
 
-This application helps users submit lost/found items, upload images, and uses AI-powered matching to find possible matches. It also includes Admin login, Email/SMS notifications, Dark Mode, and PDF report generation.
+This project is ideal for **college submissions, GitHub portfolios, academic demos, and real-world deployment**.
 
-🚀 Features
-🖼️ Image Upload
+---
 
-Upload images of lost/found items for better identification.
+## ✨ **Key Features**
 
-🧠 NLP Description Matching
+### 🖼️ **Image Upload System**
 
-Uses NLTK + TF-IDF + Cosine Similarity to match descriptions smartly.
+<img width="1142" height="695" alt="image 2" src="https://github.com/user-attachments/assets/fd3581bc-bc76-4170-929a-27b94cd086da" />
 
-🎨 Modern UI (ttkbootstrap)
 
-Beautiful UI with optional themes.
+### 🧠 **AI-Powered NLP Matching**
 
-🌙 Dark Mode
+Uses **NLTK** + **TF-IDF** + **Cosine Similarity** to match items smartly.
 
-Toggle dark/light themes via settings.
+### 🎨 **Modern UI (ttkbootstrap)**
 
-📩 Email Notifications (SMTP)
+A sleek, professional interface with smooth styling.
 
-Send email alerts when a match is found.
+### 🌙 **Dark Mode Support**
 
-📱 SMS Notifications (Twilio)
+Toggle dark/light themes in the settings panel.
 
-Optional Twilio integration to send SMS alerts.
+### 📩 **Email Notifications (SMTP)**
 
-🔍 Search Bar
+Automatically send match alerts directly to user email.
 
-Quickly filter and find items.
+### 📱 **SMS Notifications (Twilio)**
 
-🔐 Admin Login System
+Optional—send SMS alerts using Twilio API.
 
-Hashed admin credentials stored inside the database. Default:
+### 🔍 **Search System**
+
+Instantly search items by name, description, or place.
+
+### 🔐 **Admin Login System**
+
+Secure admin access with **hashed credentials**.
+Default credentials:
+
+```
 username: admin
 password: admin123
+```
 
-📄 PDF Report Generator
+### 📄 **PDF Report Generator (ReportLab)**
 
-Generate a PDF summary of an item and its matches.
+Generate a professional PDF summary of an item + potential matches.
 
-🗂️ Project Structure
-📁 project-folder
-├── lost.py
-├── requirements.txt
-├── README.md
-├── items.db # Auto-created
-├── images/ # Auto-created
-└── settings.json # Auto-created
+---
 
-🛠️ Installation
-1️⃣ Install Python 3.8+
+## 📂 **Project Structure**
 
-Download from: https://www.python.org/downloads/
+```bash
+📁 your-project-folder/
+│── lost.py
+│── requirements.txt
+│── README.md
+│── items.db          # Auto-generated
+│── settings.json     # Auto-generated
+└── 📁 images/        # Auto-created for uploaded files
+```
 
-2️⃣ Install Dependencies
+---
+
+## 🛠️ **Installation Guide**
+
+### **1️⃣ Install Python 3.8+**
+
+Download from: [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+---
+
+### **2️⃣ Install Required Packages**
+
+```bash
 pip install -r requirements.txt
+```
 
-3️⃣ Run the App
+---
+
+### **3️⃣ Run the Application**
+
+```bash
 python lost.py
+```
 
-🔧 Configuration
-⚙️ SMTP (Email)
+---
 
-Go to Settings → SMTP and configure:
+## ⚙️ **Configuration**
 
-Host (example: smtp.gmail.com)
+### **📧 SMTP Email Setup**
 
-Port (587)
+Go to: **Settings → SMTP** and enter:
 
-Username
+* SMTP Host (e.g., smtp.gmail.com)
+* Port: 587
+* Username
+* Password
+* From Email
 
-Password
+> ⚠️ **Gmail Users:** Must use an **App Password**.
 
-From Email
+---
 
-Gmail users must use an App Password.
+### **📱 Twilio SMS Setup (Optional)**
 
-⚙️ Twilio SMS (Optional)
+Go to: **Settings → Twilio**
 
-Go to Settings → Twilio and enter:
+* Account SID
+* Auth Token
+* Phone Number (Twilio verified)
 
-Account SID
+---
 
-Auth Token
+## 🧠 **How NLP Matching Works**
 
-Twilio Phone Number
+The system processes text using:
 
-🧪 NLP Matching Logic
+* Tokenization
+* Stopword removal
+* Stemming
+* TF-IDF Vectorization
+* Cosine similarity
 
-Descriptions are processed using:
+Matches are displayed with a **similarity score (0–1)**.
 
-Tokenization
+---
 
-Stopword removal
+## 🔐 **Admin System**
 
-Stemming
+* Admin passwords stored using **SHA-256 hashing**.
+* Only admins can view/manage certain features.
+* Default admin is auto-created.
 
-TF‑IDF vectorization
+---
 
-Cosine similarity
+## 📄 **PDF Report Generation**
 
-Matches are shown with a similarity score (0–1).
+Automatically export:
 
-🛡️ Admin System
+* Item details
+* Description
+* Submission info
+* All matched items + similarity scores
 
-Admin credentials stored hashed (SHA‑256)
+Useful for: **records, printing, verification**, etc.
 
-Default admin auto-created on first run
+---
 
-Used for restricted features (future expansion possible)
+## 🖥️ **Build Windows EXE (Standalone)**
 
-📄 Generate PDF Report
+You can package the project into an EXE:
 
-App allows exporting:
-
-Item details
-
-Possible matches
-
-Description
-
-Similarity scores
-
-Saved with ReportLab.
-
-📦 Build EXE (Windows)
-
-You can convert this app into a standalone EXE:
+```bash
 pyinstaller --onefile --windowed lost.py
+```
 
-After build, find your EXE in:
+Output file will appear in:
+
+```
 dist/lost.exe
+```
 
-❤️ Credits
+---
 
-Developed by: AashishCyberH4CKS
 
-⚖️ License
+---
 
-This project is free to use and modify for personal or educational purposes.
+## ❤️ **Credits**
 
-⭐ If you use this in GitHub, consider giving the repo a star!
+* Developed by **AashishCyberH4CKS**
+
+---
+
+## 📜 **License**
+
+This project is free for personal, academic, and educational use.
+
+> ⭐ If this project helped you, consider giving it a **star on GitHub**!
