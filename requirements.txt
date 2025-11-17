@@ -1,0 +1,6 @@
+nltk
+scikit-learn
+pillow
+reportlab
+ttkbootstrap
+twilio
